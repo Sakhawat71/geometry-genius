@@ -28,19 +28,19 @@
                         <h2 class="card-title mx-auto text-2xl font-bold text-[#414141]">Triangle</h2>
                         <p class="text-xl py-2">Area (A) = 0.5 X b X h</p>
                         <p class="py-2">
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="base" >
+                            <input id="triangle-base" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="base" >
                             <span class="pr-2">cm</span>
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="height" >
+                            <input id="triangle-height" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="height" >
                             <span>cm</span>
                         </p>
-                        <p class="text-left text-xl px-8">Area: <span id="area-show"></span></p>
+                        <p class="text-left text-xl px-8">Area: <span id="area-show" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full py-3">
-                            <button onclick="calculetTriangleArea()" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
+                            <button onclick="calculetTriangleArea('triangle-base','triangle-height','area-show')" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-xl hover:bg-[#69C7F0]">
+                <div class="card bg-base-100 shadow-xl hover:bg-green-200">
                     <figure class="px-5 py-5 h-52">
                         <img src="images/rectangle.png" class="rounded-xl h-full" />
                     </figure>
@@ -53,7 +53,7 @@
                             <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="Length" >
                             <span>cm</span>
                         </p>
-                        <p class="text-left text-xl px-8">Area: <span id="area-show"></span></p>
+                        <p class="text-left text-xl px-8">Area: <span id="area-show" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full py-3">
                             <button onclick="calculetTriangleArea()" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
                         </div>
