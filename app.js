@@ -28,3 +28,12 @@ const calculetRectangleArea = (widthId, heightId, showAreaId) =>{
     showArea(showAreaId,area)
 }
 
+// Parallelogram
+
+const calculetParallelogramArea = (baseID,heigtId,showAreaId) =>{
+    const base = getValueFormInput(baseID);
+    const height = getValueFormInput(heigtId);
+
+    const area = base * height;
+    showArea(showAreaId,area)
+}
