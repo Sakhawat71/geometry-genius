@@ -53,9 +53,18 @@ const calculetRhombusArea = (diagonalAId,diagonalBId,showAreaId) =>{
 const calculetPentagonArea = (pentagonId,apothemId,showAreaId) => {
     const pentagon = getValueFormInput(pentagonId);
     const apothem = getValueFormInput(apothemId)
-    const area = 0.5 * pentagon * diagonalB;
+    const area = 0.5 * pentagon * apothem;
     showArea(showAreaId,area)
 }
 
+// Ellipse
 
-// getValueFormInput
+const calculetEllipseArea = (AId,BId,showAreaId) =>{
+    const A = getValueFormInput(AId);
+    const B = getValueFormInput(BId);
+    const piRow = Math.PI;
+    const pi = piRow.toFixed(2)
+
+    const area =  pi  * A * B;
+    showArea(showAreaId,area)
+}

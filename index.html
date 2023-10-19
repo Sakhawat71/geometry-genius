@@ -128,14 +128,14 @@
                         <h2 class="card-title mx-auto text-2xl font-bold text-[#414141]">Ellipse</h2>
                         <p class="text-xl py-2">Area (A) = πab</p>
                         <p class="py-2">
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="Axis a" >
+                            <input id="ellipse-a" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="Axis a" >
                             <span class="pr-2">cm</span>
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="Axis b" >
+                            <input id="ellipse-b" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="Axis b" >
                             <span>cm</span>
                         </p>
-                        <p class="text-left text-xl px-8">Area: <span id="rectangle-area-show" class="font-bold">0</span> cm<sup>2</sup></p>
+                        <p class="text-left text-xl px-8">Area: <span id="ellipse-area-show" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full py-3">
-                            <button onclick="calculetTriangleArea()" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
+                            <button onclick="calculetEllipseArea('ellipse-a','ellipse-b','ellipse-area-show')" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
