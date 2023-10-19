@@ -37,3 +37,16 @@ const calculetParallelogramArea = (baseID,heigtId,showAreaId) =>{
     const area = base * height;
     showArea(showAreaId,area)
 }
+
+// Rhombus
+
+const calculetRhombusArea = (diagonalAId,diagonalBId,showAreaId) =>{
+    const diagonalA = getValueFormInput(diagonalAId);
+    const diagonalB = getValueFormInput(diagonalBId);
+    
+    const area = diagonalA * diagonalB;
+    showArea(showAreaId,area)
+}
+
+
+// getValueFormInput
