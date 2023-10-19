@@ -108,14 +108,14 @@
                         <h2 class="card-title mx-auto text-2xl font-bold text-[#414141]">Pentagon</h2>
                         <p class="text-xl py-2">Area (A) = 0.5 X p X b</p>
                         <p class="py-2">
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="pentagon" >
+                            <input id="pentagon-side" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="pentagon side" >
                             <span class="pr-2">cm</span>
-                            <input class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="apothem" >
+                            <input id="pentagon-apothem" class="bg-gray-200 w-20 rounded px-2 py-1" type="text" placeholder="apothem" >
                             <span>cm</span>
                         </p>
-                        <p class="text-left text-xl px-8">Area: <span id="rectangle-area-show" class="font-bold">0</span> cm<sup>2</sup></p>
+                        <p class="text-left text-xl px-8">Area: <span id="pentagon-area-show" class="font-bold">0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full py-3">
-                            <button onclick="calculetTriangleArea()" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
+                            <button onclick="calculetTriangleArea('pentagon-side','pentagon-apothem','pentagon-area-show')" class="btn btn-primary text-white border-none bg-[#1090D8] hover:bg-[#1090D8] w-full">Calculate</button>
                         </div>
                     </div>
                 </div>

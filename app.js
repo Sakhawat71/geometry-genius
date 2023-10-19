@@ -48,5 +48,14 @@ const calculetRhombusArea = (diagonalAId,diagonalBId,showAreaId) =>{
     showArea(showAreaId,area)
 }
 
+// Pentagon
+
+const calculetPentagonArea = (pentagonId,apothemId,showAreaId) => {
+    const pentagon = getValueFormInput(pentagonId);
+    const apothem = getValueFormInput(apothemId)
+    const area = 0.5 * pentagon * diagonalB;
+    showArea(showAreaId,area)
+}
+
 
 // getValueFormInput
