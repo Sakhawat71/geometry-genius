@@ -53,7 +53,8 @@ const calculetRectangleArea = (widthId, heightId, showAreaId) => {
 
     if(checkPositiveNumber(width,height)){
         const area = width * height;
-        showArea(showAreaId, area)
+        showArea(showAreaId, area);
+        addToCalculationEntry('Rectangle',area);
     }
 }
 
@@ -65,7 +66,9 @@ const calculetParallelogramArea = (baseID, heigtId, showAreaId) => {
 
     if(checkPositiveNumber(base,height)){
         const area = base * height;
-        showArea(showAreaId, area)
+        showArea(showAreaId, area);
+        addToCalculationEntry('Parallelogram',area);
+
     }
 }
 
@@ -77,7 +80,9 @@ const calculetRhombusArea = (diagonalAId, diagonalBId, showAreaId) => {
 
     if(checkPositiveNumber(diagonalA,diagonalB)){
         const area = diagonalA * diagonalB;
-        showArea(showAreaId, area)
+        showArea(showAreaId, area);
+        addToCalculationEntry('Rhombus',area);
+
     }
 }
 
@@ -89,7 +94,8 @@ const calculetPentagonArea = (pentagonId, apothemId, showAreaId) => {
 
     if(checkPositiveNumber(pentagon,apothem)){
         const area = 0.5 * pentagon * apothem;
-        showArea(showAreaId, area)
+        showArea(showAreaId, area);
+        addToCalculationEntry('Pentagon',area);
     }
 }
 
@@ -103,6 +109,7 @@ const calculetEllipseArea = (AId, BId, showAreaId) => {
 
     if(checkPositiveNumber(A,B)){
         const area = pi * A * B;
-        showArea(showAreaId, area)
+        showArea(showAreaId, area);
+        addToCalculationEntry('Ellipse',area);
     }
 }
