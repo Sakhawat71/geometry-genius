@@ -104,11 +104,12 @@ const calculetPentagonArea = (pentagonId, apothemId, showAreaId) => {
 const calculetEllipseArea = (AId, BId, showAreaId) => {
     const A = getValueFormInput(AId);
     const B = getValueFormInput(BId);
-    const piRow = Math.PI;
-    const pi = piRow.toFixed(2)
+    const pi = 3.1416;
 
     if(checkPositiveNumber(A,B)){
-        const area = pi * A * B;
+        const areaRow = pi * A * B;
+        const areaString = areaRow.toFixed(2);
+        const area = parseFloat(areaString);
         showArea(showAreaId, area);
         addToCalculationEntry('Ellipse',area);
     }
