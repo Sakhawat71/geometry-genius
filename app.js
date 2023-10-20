@@ -19,9 +19,19 @@ const checkPositiveNumber = (perameter1, perameter2) => {
 }
 
 const addToCalculationEntry = (areaType,area) =>{
+
     const areaShowDiv = document.getElementById("area-calculation");
-    
+    const p = document.createElement("p");
+    p.classList.add('px-2')
+    const count = areaShowDiv.childElementCount;
+    p.innerHTML = `${count + 1} ${areaType} ${area} cm<sup>2</sup>`;
+    areaShowDiv.appendChild(p); 
 }
+
+
+// ************************************************************************************** */
+// ************************************************************************************** */
+// ************************************************************************************** */
 
 // Triangle
 const calculetTriangleArea = (baseId, heigtId, showAreaId) => {
@@ -31,6 +41,7 @@ const calculetTriangleArea = (baseId, heigtId, showAreaId) => {
     if(checkPositiveNumber(base,height)){
         const area = 0.5 * base * height;
         showArea(showAreaId, area)
+        addToCalculationEntry('Triangle',area);
     }
     
 }
