@@ -12,10 +12,15 @@ const showArea = (id, area) => {
 
 const checkPositiveNumber = (perameter1, perameter2) => {
     if (isNaN(perameter1) || isNaN(perameter2) || perameter1 <= 0 || perameter2 <= 0) {
-        alert("Please insert positive numbers for both base and height.");
+        alert("Please insert positive numbers for both site.");
         return false;
     }
     return true;
+}
+
+const addToCalculationEntry = (areaType,area) =>{
+    const areaShowDiv = document.getElementById("area-calculation");
+    
 }
 
 // Triangle
@@ -27,7 +32,7 @@ const calculetTriangleArea = (baseId, heigtId, showAreaId) => {
         const area = 0.5 * base * height;
         showArea(showAreaId, area)
     }
-      
+    
 }
 
 // Rectangle
